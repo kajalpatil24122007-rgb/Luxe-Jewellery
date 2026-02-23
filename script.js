@@ -1,32 +1,32 @@
 document.addEventListener("DOMContentLoaded", function(){
 
 const products = [
-  {id:1,name:"Gold Necklace",price:5000,category:"Necklace",image:"/gold-necklace.jpg"},
-  {id:2,name:"Diamond Ring",price:8000,category:"Ring",image:"/diamond-ring.jpg"},
-  {id:3,name:"Silver Earrings",price:3000,category:"Earrings",image:"/silver-earrings.jpg"},
-  {id:4,name:"Luxury Necklace",price:12000,category:"Necklace",image:"/luxury-necklace.jpg"},
-  {id:5,name:"Rose Gold Ring",price:6500,category:"Ring",image:"/rose-gold-ring.jpg"},
-  {id:6,name:"Pearl Earrings",price:4000,category:"Earrings",image:"/pearl-earrings.jpg"},
-{id:7,name:"Bridal Gold Set",price:25000,category:"Necklace",image:"/bridal-gold-set.jpg"},
-  {id:8,name:"Gold Bracelet",price:7000,category:"Bracelet",image:"/gold-bracelet.jpg"},
-  {id:9,name:"Diamond Bracelet",price:15000,category:"Bracelet",image:"/diamond-bracelet.jpg"},
-  {id:10,name:"Silver Ring",price:2000,category:"Ring",image:"/silver-ring.jpg"},
-  {id:11,name:"Silver Anklet",price:2500,category:"Anklet",image:"/silver-anklet.jpg"},
-  {id:12,name:"Traditional Anklet",price:3800,category:"Anklet",image:"/traditional-anklet.jpg"},
-  {id:13,name:"Heart Pendant",price:3200,category:"Pendant",image:"/heart-pendant.jpg"},
-  {id:14,name:"Diamond Pendant",price:11000,category:"Pendant",image:"/diamond-pendant.jpg"},
-  {id:15,name:"Diamond Stud Earrings",price:15000,category:"Earrings",image:"/diamond-stud-earrings.jpg"},
-  {id:16,name:"Silver Chain Necklace",price:3500,category:"Necklace",image:"/silver-chain-necklace.jpg"},
-  {id:17,name:"Platinum Ring",price:18000,category:"Ring",image:"/platinum-ring.jpg"},
-  {id:18,name:"Traditional Jhumka",price:2800,category:"Earrings",image:"/traditional-jhumka.jpg"},
-  {id:19,name:"Temple Jewellery Necklace",price:22000,category:"Necklace",image:"/temple-jewellery-necklace.jpg"},
-  {id:20,name:"Minimal Gold Ring",price:4500,category:"Ring",image:"/minimal-gold-ring.jpg"},
-  {id:21,name:"Luxury Diamond Choker",price:30000,category:"Necklace",image:"/luxury-diamond-choker.jpg"},
-  {id:22,name:"Crystal Drop Earrings",price:5200,category:"Earrings",image:"/crystal-drop-earrings.jpg"}, 
-   {id:23,name:"Diamond Nose Pin",price:2800,category:"Nose Pin",image:"/diamond-nose-pin.jpg"},
-  {id:24,name:"Gold Nose Pin",price:1500,category:"Nose Pin",image:"/gold-nose-pin.jpg"},
-  {id:25,name:"Traditional Mangalsutra",price:18000,category:"Mangalsutra",image:"/traditional-mangalsutra.jpg"},
-  {id:26,name:"Diamond Mangalsutra",price:35000,category:"Mangalsutra",image:"/diamond-mangalsutra.jpg"}
+  {id:1,name:"Gold Necklace",price:5000,category:"Necklace",image:"gold-necklace.jpg"},
+  {id:2,name:"Diamond Ring",price:8000,category:"Ring",image:"diamond-ring.jpg"},
+  {id:3,name:"Silver Earrings",price:3000,category:"Earrings",image:"silver-earrings.jpg"},
+  {id:4,name:"Luxury Necklace",price:12000,category:"Necklace",image:"luxury-necklace.jpg"},
+  {id:5,name:"Rose Gold Ring",price:6500,category:"Ring",image:"rose-gold-ring.jpg"},
+  {id:6,name:"Pearl Earrings",price:4000,category:"Earrings",image:"pearl-earrings.jpg"},
+{id:7,name:"Bridal Gold Set",price:25000,category:"Necklace",image:"bridal-gold-set.jpg"},
+  {id:8,name:"Gold Bracelet",price:7000,category:"Bracelet",image:"gold-bracelet.jpg"},
+  {id:9,name:"Diamond Bracelet",price:15000,category:"Bracelet",image:"diamond-bracelet.jpg"},
+  {id:10,name:"Silver Ring",price:2000,category:"Ring",image:"silver-ring.jpg"},
+  {id:11,name:"Silver Anklet",price:2500,category:"Anklet",image:"silver-anklet.jpg"},
+  {id:12,name:"Traditional Anklet",price:3800,category:"Anklet",image:"traditional-anklet.jpg"},
+  {id:13,name:"Heart Pendant",price:3200,category:"Pendant",image:"heart-pendant.jpg"},
+  {id:14,name:"Diamond Pendant",price:11000,category:"Pendant",image:"diamond-pendant.jpg"},
+  {id:15,name:"Diamond Stud Earrings",price:15000,category:"Earrings",image:"diamond-stud-earrings.jpg"},
+  {id:16,name:"Silver Chain Necklace",price:3500,category:"Necklace",image:"silver-chain-necklace.jpg"},
+  {id:17,name:"Platinum Ring",price:18000,category:"Ring",image:"platinum-ring.jpg"},
+  {id:18,name:"Traditional Jhumka",price:2800,category:"Earrings",image:"traditional-jhumka.jpg"},
+  {id:19,name:"Temple Jewellery Necklace",price:22000,category:"Necklace",image:"temple-jewellery-necklace.jpg"},
+  {id:20,name:"Minimal Gold Ring",price:4500,category:"Ring",image:"minimal-gold-ring.jpg"},
+  {id:21,name:"Luxury Diamond Choker",price:30000,category:"Necklace",image:"luxury-diamond-choker.jpg"},
+  {id:22,name:"Crystal Drop Earrings",price:5200,category:"Earrings",image:"crystal-drop-earrings.jpg"}, 
+   {id:23,name:"Diamond Nose Pin",price:2800,category:"Nose Pin",image:"diamond-nose-pin.jpg"},
+  {id:24,name:"Gold Nose Pin",price:1500,category:"Nose Pin",image:"gold-nose-pin.jpg"},
+  {id:25,name:"Traditional Mangalsutra",price:18000,category:"Mangalsutra",image:"traditional-mangalsutra.jpg"},
+  {id:26,name:"Diamond Mangalsutra",price:35000,category:"Mangalsutra",image:"diamond-mangalsutra.jpg"}
 ];
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -258,6 +258,7 @@ window.addEventListener("scroll", function(){
   const navbar = document.querySelector(".navbar");
   navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
+
 
 
 
