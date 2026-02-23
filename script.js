@@ -1,32 +1,32 @@
 document.addEventListener("DOMContentLoaded", function(){
 
 const products = [
-  {id:1,name:"Gold Necklace",price:5000,category:"Necklace",image:"/images/Gold-Necklace.jpg"},
-  {id:2,name:"Diamond Ring",price:8000,category:"Ring",image:"/images/Diamond-Ring.jpg"},
-  {id:3,name:"Silver Earrings",price:3000,category:"Earrings",image:"/images/Silver-Earrings.jpg"},
-  {id:4,name:"Luxury Necklace",price:12000,category:"Necklace",image:"/images/Luxury-Necklace.jpg"},
-  {id:5,name:"Rose Gold Ring",price:6500,category:"Ring",image:"/images/Rose-Gold-Ring.jpg"},
-  {id:6,name:"Pearl Earrings",price:4000,category:"Earrings",image:"/images/Pearl-Earrings.jpg"},
-{id:7,name:"Bridal Gold Set",price:25000,category:"Necklace",image:"/images/Bridal-Gold-Set.jpg"},
-  {id:8,name:"Gold Bracelet",price:7000,category:"Bracelet",image:"/images/Gold-Bracelet.jpg"},
-  {id:9,name:"Diamond Bracelet",price:15000,category:"Bracelet",image:"/images/Diamond-Bracelet.jpg"},
-  {id:10,name:"Silver Ring",price:2000,category:"Ring",image:"/images/Silver-Ring.jpg"},
-  {id:11,name:"Silver Anklet",price:2500,category:"Anklet",image:"/images/Silver-Anklet.jpg"},
-  {id:12,name:"Traditional Anklet",price:3800,category:"Anklet",image:"/images/Traditional-Anklet.jpg"},
-  {id:13,name:"Heart Pendant",price:3200,category:"Pendant",image:"/images/Heart-Pendant.jpg"},
-  {id:14,name:"Diamond Pendant",price:11000,category:"Pendant",image:"/images/Diamond-Pendant.jpg"},
-  {id:15,name:"Diamond Stud Earrings",price:15000,category:"Earrings",image:"/images/Diamond-Stud-Earrings.jpg"},
-  {id:16,name:"Silver Chain Necklace",price:3500,category:"Necklace",image:"/images/Silver-Chain-Necklace.jpg"},
-  {id:17,name:"Platinum Ring",price:18000,category:"Ring",image:"/images/PlatinumRing.jpg"},
-  {id:18,name:"Traditional Jhumka",price:2800,category:"Earrings",image:"/images/Traditional-Jhumka.jpg"},
-  {id:19,name:"Temple Jewellery Necklace",price:22000,category:"Necklace",image:"/images/Temple-Jewellery-Necklace.jpg"},
-  {id:20,name:"Minimal Gold Ring",price:4500,category:"Ring",image:"/images/Minimal-Gold-Ring.jpg"},
-  {id:21,name:"Luxury Diamond Choker",price:30000,category:"Necklace",image:"/images/Luxury-Diamond-Choker.jpg"},
-  {id:22,name:"Crystal Drop Earrings",price:5200,category:"Earrings",image:"/images/Crystal-Drop-Earrings.jpg"}, 
-   {id:23,name:"Diamond Nose Pin",price:2800,category:"Nose Pin",image:"/images/Diamond-Nose-Pin.jpg"},
-  {id:24,name:"Gold Nose Pin",price:1500,category:"Nose Pin",image:"/images/Gold-Nose-Pin.jpg"},
-  {id:25,name:"Traditional Mangalsutra",price:18000,category:"Mangalsutra",image:"/images/Traditional-Mangalsutra.jpg"},
-  {id:26,name:"Diamond Mangalsutra",price:35000,category:"Mangalsutra",image:"/images/Diamond-Mangalsutra.jpg"}
+  {id:1,name:"Gold Necklace",price:5000,category:"Necklace",image:"/images/gold-necklace.jpg"},
+  {id:2,name:"Diamond Ring",price:8000,category:"Ring",image:"/images/diamond-ring.jpg"},
+  {id:3,name:"Silver Earrings",price:3000,category:"Earrings",image:"/images/silver-earrings.jpg"},
+  {id:4,name:"Luxury Necklace",price:12000,category:"Necklace",image:"/images/luxury-necklace.jpg"},
+  {id:5,name:"Rose Gold Ring",price:6500,category:"Ring",image:"/images/rose-gold-ring.jpg"},
+  {id:6,name:"Pearl Earrings",price:4000,category:"Earrings",image:"/images/pearl-earrings.jpg"},
+{id:7,name:"Bridal Gold Set",price:25000,category:"Necklace",image:"/images/bridal-gold-set.jpg"},
+  {id:8,name:"Gold Bracelet",price:7000,category:"Bracelet",image:"/images/gold-bracelet.jpg"},
+  {id:9,name:"Diamond Bracelet",price:15000,category:"Bracelet",image:"/images/diamond-bracelet.jpg"},
+  {id:10,name:"Silver Ring",price:2000,category:"Ring",image:"/images/silver-ring.jpg"},
+  {id:11,name:"Silver Anklet",price:2500,category:"Anklet",image:"/images/silver-anklet.jpg"},
+  {id:12,name:"Traditional Anklet",price:3800,category:"Anklet",image:"/images/traditional-anklet.jpg"},
+  {id:13,name:"Heart Pendant",price:3200,category:"Pendant",image:"/images/heart-pendant.jpg"},
+  {id:14,name:"Diamond Pendant",price:11000,category:"Pendant",image:"/images/diamond-pendant.jpg"},
+  {id:15,name:"Diamond Stud Earrings",price:15000,category:"Earrings",image:"/images/diamond-stud-earrings.jpg"},
+  {id:16,name:"Silver Chain Necklace",price:3500,category:"Necklace",image:"/images/silver-chain-necklace.jpg"},
+  {id:17,name:"Platinum Ring",price:18000,category:"Ring",image:"/images/platinum-ring.jpg"},
+  {id:18,name:"Traditional Jhumka",price:2800,category:"Earrings",image:"/images/traditional-jhumka.jpg"},
+  {id:19,name:"Temple Jewellery Necklace",price:22000,category:"Necklace",image:"/images/temple-jewellery-necklace.jpg"},
+  {id:20,name:"Minimal Gold Ring",price:4500,category:"Ring",image:"/images/minimal-gold-ring.jpg"},
+  {id:21,name:"Luxury Diamond Choker",price:30000,category:"Necklace",image:"/images/luxury-diamond-choker.jpg"},
+  {id:22,name:"Crystal Drop Earrings",price:5200,category:"Earrings",image:"/images/crystal-drop-earrings.jpg"}, 
+   {id:23,name:"Diamond Nose Pin",price:2800,category:"Nose Pin",image:"/images/diamond-nose-pin.jpg"},
+  {id:24,name:"Gold Nose Pin",price:1500,category:"Nose Pin",image:"/images/gold-nose-pin.jpg"},
+  {id:25,name:"Traditional Mangalsutra",price:18000,category:"Mangalsutra",image:"/images/traditional-mangalsutra.jpg"},
+  {id:26,name:"Diamond Mangalsutra",price:35000,category:"Mangalsutra",image:"/images/diamond-mangalsutra.jpg"}
 ];
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -39,7 +39,6 @@ const categoryFilter = document.getElementById("categoryFilter");
 const sortSelect = document.getElementById("sort");
 const container = document.getElementById("wishlist-container");
 
-// UPDATE COUNTS
 function updateCounts(){
   const cartCount = document.getElementById("cart-count");
   const wishCount = document.getElementById("wishlist-count");
@@ -49,7 +48,6 @@ function updateCounts(){
 }
 
 
-// DISPLAY PRODUCTS
 function displayProducts(items){
   if(!productList) return;
 
@@ -69,7 +67,6 @@ function displayProducts(items){
 }
 
 
-// SEARCH
 if(searchInput){
 searchInput.addEventListener("input", function(){
   const value = this.value.toLowerCase();
@@ -81,7 +78,6 @@ searchInput.addEventListener("input", function(){
 }
 
 
-// CATEGORY
 if(categoryFilter){
 categoryFilter.addEventListener("change", function(){
   if(this.value === "all"){
@@ -107,7 +103,6 @@ sortSelect.addEventListener("change", function(){
 }
 
 
-// ADD TO CART
 
 window.addToCart = function(id){
   const product = products.find(p => p.id === id);
@@ -117,7 +112,6 @@ window.addToCart = function(id){
 }
 
 
-// ADD TO WISHLIST
 window.addToWishlist = function(id){
   if(!wishlist.includes(id)){
     wishlist.push(id);
@@ -136,7 +130,6 @@ window.removeFromWishlist = function(id){
 }
 
 
-// WISHLIST PAGE
 const wishlistContainer = document.getElementById("wishlist-items");
 if(wishlistContainer){
   if(wishlist.length === 0){
@@ -182,7 +175,7 @@ function addToWishlist(product){
 updateWishlistCount();
 
 
-// CART PAGE
+
 
 const cartContainer = document.getElementById("cart-items");
 if(cartContainer){
@@ -222,9 +215,6 @@ function updateCounts(){
 }
 
 
-// CHECKOUT
-
-// CHECKOUT PAGE DATA
 const checkoutContainer = document.getElementById("checkout-items");
 
 if(checkoutContainer){
