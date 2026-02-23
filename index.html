@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxe Jewellery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header class="navbar">
+
+  <div class="logo">
+    💎 <span>Luxe Jewellery</span>
+  </div>
+
+  <!-- Search Box -->
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Search jewellery...">
+    <span class="search-icon">🔍</span>
+  </div>
+
+  <nav class="nav-icons">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+
+    <a href="wishlist.html" id="wishlist-count" class="icon-link">❤️ 0</a>
+    <a href="cart.html" id="cart-count" class="icon-link">🛒 0</a>
+
+    <a href="login.html" class="login-btn">👤 Login</a>
+  </nav>
+
+</header>
+<section class="hero">
+  <div class="hero-content">
+  <br><br><br><br><br><br><br><br><br><br>
+    <a href="#product-list" class="hero-btn">Shop Now</a>
+  </div>
+</section>
+
+<section class="filters">
+<select id="categoryFilter">
+  <option value="all">All Categories</option>
+  <option value="Necklace">Necklace</option>
+  <option value="Ring">Ring</option>
+  <option value="Earrings">Earrings</option>
+  <option value="Bracelet">Bracelet</option>
+  <option value="Anklet">Anklet</option>
+  <option value="Pendant">Pendant</option>
+  <option value="Nose Pin">Nose Pin</option>
+  <option value="Mangalsutra">Mangalsutra</option>
+</select>
+ 
+
+  <select id="sort">
+    <option value="default">Sort By</option>
+    <option value="low">Price: Low to High</option>
+    <option value="high">Price: High to Low</option>
+  </select>
+</section>
+
+<section id="product-list" class="products"></section>
+
+<script src="script.js"></script>
+</body>
+</html>
