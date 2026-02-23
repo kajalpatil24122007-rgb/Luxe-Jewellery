@@ -105,7 +105,7 @@ body{
 
 .hero{
   height:90vh;
-  background:url("/images/jewellary.png") center/cover no-repeat;
+  background:url("jewellary.png") center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -337,3 +337,4 @@ button:hover{
   }
 
 }
+
